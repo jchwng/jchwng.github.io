@@ -87,7 +87,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/08/build-blog-with-Hexo-on-Github/">在Github上用Hexo程序搭建博客</a>
+      <a class="article-title" href="/2019/06/08/build-blog-with-Hexo-on-Github/">在Github上使用Hexo程序搭建博客</a>
     </h1>
   
 
@@ -95,8 +95,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>昨天闲来无事，尝试着在<a href="https://github.com/" target="_blank" rel="noopener">Github</a>上搭建了一个博客，博客的框架使用的是<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>程序。因为是第一次用这种方式建博客，自己又是一个新手，所以记录一下。</p>
-<h2 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备</h2><p>部署Hexo需要在电脑中预先装好两个软件：<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>和<a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a>。在它们共同作用下，使电脑具备了与Github网站通过命令行取得连接的环境，并完全使用这种方式建立Hexo博客。关于这两个软件的安装，可以参考它们各自的官方网站上的信息。</p>
+        <p>昨天闲来无事，尝试着在<a href="https://github.com/" target="_blank" rel="noopener">Github</a> 上搭建了一个博客，博客的框架使用的是<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> 程序。因为是第一次用这种方式建博客，自己又是一个新手，所以记录一下。</p>
+<h2 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备</h2><p>部署Hexo需要在电脑中预先装好两个软件：<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a> 和<a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a> 。在它们共同作用下，使电脑具备了与Github网站通过命令行取得连接的环境，并完全使用这种方式建立Hexo博客。关于这两个软件的安装，可以参考它们各自的官方网站上的信息。</p>
 <h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>安装环境搭建完成以后，我们使用以下命令安装Hexo。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
@@ -109,7 +109,7 @@
 
 <img src="/2019/06/08/build-blog-with-Hexo-on-Github/2建站2.JPG" title="目录结构">
 
-<p>继续执行以下命令，我们就可以通过在浏览器上输入[<a href="http://localhost:4000]在本地电脑上预览生成的网站了。" target="_blank" rel="noopener">http://localhost:4000]在本地电脑上预览生成的网站了。</a></p>
+<p>继续执行以下命令，我们就可以通过在浏览器上输入[<a href="http://localhost:4000]" target="_blank" rel="noopener">http://localhost:4000]</a> 在本地电脑上预览生成的网站了。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
 <img src="/2019/06/08/build-blog-with-Hexo-on-Github/3本地预览.JPG" title="本地预览">
@@ -137,10 +137,9 @@
 
 <img src="/2019/06/08/build-blog-with-Hexo-on-Github/10生成密钥.jpg" title="生成密钥">
 
-<p>输入以上命令后，回车三次，会在.ssh文件夹中生成id_rsa和id_rsa.pub两个文件，分别是保存在自己电脑中的私钥和保存在远端电脑中的公钥。之后我们启用ssh-agent（密钥代理），简单说它是一个可以帮助我们管理私钥的程序。分别执行以下命令：</p>
+<p>输入以上命令后，回车三次，会在.ssh文件夹中生成id_rsa和id_rsa.pub两个文件，它们分别是储存在自己电脑中的私钥和存储在远端电脑中的公钥。之后我们启用ssh-agent（密钥代理），简单说它是一个可以帮助我们管理私钥的程序。分别执行以下命令以便我们以后更容易的建立连接：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">eval</span> <span class="string">"<span class="variable">$(ssh-agent -s)</span>"</span></span><br><span class="line">$ ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
 
-<p>这样，以便我们以后更容易的建立连接。</p>
 <img src="/2019/06/08/build-blog-with-Hexo-on-Github/11私钥保管.JPG" title="启用密钥代理">
 
 <p>接下来，配置公钥到Github的服务器。在Github网站的Settings（设置）里，找到SSH and GPG keys的设置，点击New SSH key以添加之前生成的公钥。</p>
@@ -157,7 +156,7 @@
 
 <img src="/2019/06/08/build-blog-with-Hexo-on-Github/6部署-解决.JPG" title="部署解决">
 
-<p>同时，确保在_config.yml文件内修改以下配置。关于网站其他相关的配置也需要在这里设定，可参考<a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">Hexo</a>官网说明。</p>
+<p>同时，确保在_config.yml文件内修改以下配置。关于网站其他相关的配置也需要在这里设定，可参考<a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">Hexo</a> 官网说明。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:yourname/yourname.github.io.git  # 替换yourname为你的用户名</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
 <p>当命令行最终显示INFO Deploy done: git时，表明我们在Github的网站部署成功，我们便可以在浏览器中输入网址，查看我们的网站。</p>
@@ -169,7 +168,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/" data-id="cjwna2ibp0000isumke3eqwzs" class="article-share-link">Share</a>
+      <a data-url="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/" data-id="cjwnaeizn00008sum48vnonfu" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Githubit/">Githubit</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
@@ -220,7 +219,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://jchwng.github.io/2019/06/07/hello-world/" data-id="cjwna2ic40001isum5epflwi9" class="article-share-link">Share</a>
+      <a data-url="http://jchwng.github.io/2019/06/07/hello-world/" data-id="cjwnaej0300018sumuhys29hq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -282,7 +281,7 @@
       <ul>
         
           <li>
-            <a href="/2019/06/08/build-blog-with-Hexo-on-Github/">在Github上用Hexo程序搭建博客</a>
+            <a href="/2019/06/08/build-blog-with-Hexo-on-Github/">在Github上使用Hexo程序搭建博客</a>
           </li>
         
           <li>
