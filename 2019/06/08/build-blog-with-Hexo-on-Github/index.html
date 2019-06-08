@@ -11,28 +11,28 @@
 <meta name="keywords" content="Github,Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在Github上使用Hexo程序搭建博客">
-<meta property="og:url" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/index.html">
+<meta property="og:url" content="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/index.html">
 <meta property="og:site_name" content="佳晨的笔记">
 <meta property="og:description" content="昨天闲来无事，尝试着在Github 上搭建了一个博客，博客的框架使用的是Hexo 程序。因为是第一次用这种方式建博客，自己又是一个新手，所以记录一下。 安装前的准备部署Hexo需要在电脑中预先装好两个软件：Git 和Node.js 。在它们共同作用下，使电脑具备了与Github网站通过命令行取得连接的环境，并完全使用这种方式建立Hexo博客。关于这两个软件的安装，可以参考它们各自的官方网站上的信息">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/1安装Hexo.JPG">
-<meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/2建站.JPG">
-<meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/2建站2.JPG">
-<meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/3本地预览.JPG">
-<meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/7设置用户信息.JPG">
-<meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/8拒绝连接.JPG">
-<meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/9无密钥.JPG">
-<meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/10生成密钥.jpg">
-<meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/11私钥保管.JPG">
-<meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/13添加ssh.JPG">
-<meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/6部署-解决.JPG">
-<meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/15部署成功.JPG">
-<meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/15部署成功2.JPG">
+<meta property="og:image" content="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/1安装Hexo.JPG">
+<meta property="og:image" content="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/2建站.JPG">
+<meta property="og:image" content="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/2建站2.JPG">
+<meta property="og:image" content="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/3本地预览.JPG">
+<meta property="og:image" content="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/7设置用户信息.JPG">
+<meta property="og:image" content="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/8拒绝连接.JPG">
+<meta property="og:image" content="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/9无密钥.JPG">
+<meta property="og:image" content="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/10生成密钥.jpg">
+<meta property="og:image" content="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/11私钥保管.JPG">
+<meta property="og:image" content="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/13添加ssh.JPG">
+<meta property="og:image" content="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/6部署-解决.JPG">
+<meta property="og:image" content="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/15部署成功.JPG">
+<meta property="og:image" content="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/15部署成功2.JPG">
 <meta property="og:updated_time" content="2019-06-08T09:38:44.532Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在Github上使用Hexo程序搭建博客">
 <meta name="twitter:description" content="昨天闲来无事，尝试着在Github 上搭建了一个博客，博客的框架使用的是Hexo 程序。因为是第一次用这种方式建博客，自己又是一个新手，所以记录一下。 安装前的准备部署Hexo需要在电脑中预先装好两个软件：Git 和Node.js 。在它们共同作用下，使电脑具备了与Github网站通过命令行取得连接的环境，并完全使用这种方式建立Hexo博客。关于这两个软件的安装，可以参考它们各自的官方网站上的信息">
-<meta name="twitter:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/1安装Hexo.JPG">
+<meta name="twitter:image" content="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/1安装Hexo.JPG">
   
     <link rel="alternate" href="/atom.xml" title="佳晨的笔记" type="application/atom+xml">
   
@@ -77,7 +77,7 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://jchwng.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://jiachenwang.com"></form>
       </div>
     </div>
   </div>
@@ -180,7 +180,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/" data-id="cjwnbtr120000l8umxk5xue5j" class="article-share-link">Share</a>
+      <a data-url="https://jiachenwang.com/2019/06/08/build-blog-with-Hexo-on-Github/" data-id="cjwnivy6i0000d4um4pug276o" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
