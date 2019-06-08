@@ -5,11 +5,12 @@
   
 
   
-  <title>build blog with Hexo on Github | 佳晨的笔记</title>
+  <title>在Github上用Hexo程序搭建博客 | 佳晨的笔记</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="昨天闲来无事，尝试着在Github上搭建了一个博客，博客的框架使用的是Hexo程序。因为是第一次用这种方式建博客，自己又是一个新手，所以记录一下。 安装前的准备部署Hexo需要在电脑中预先装好两个软件：Git和Node.js。在它们共同作用下，使电脑具备了与Github网站通过命令行取得连接的环境，并完全使用这种方式建立Hexo博客。关于这两个软件的安装，可以参考它们各自的官方网站上的信息。 安装">
+<meta name="keywords" content="Githubit,Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="build blog with Hexo on Github">
+<meta property="og:title" content="在Github上用Hexo程序搭建博客">
 <meta property="og:url" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/index.html">
 <meta property="og:site_name" content="佳晨的笔记">
 <meta property="og:description" content="昨天闲来无事，尝试着在Github上搭建了一个博客，博客的框架使用的是Hexo程序。因为是第一次用这种方式建博客，自己又是一个新手，所以记录一下。 安装前的准备部署Hexo需要在电脑中预先装好两个软件：Git和Node.js。在它们共同作用下，使电脑具备了与Github网站通过命令行取得连接的环境，并完全使用这种方式建立Hexo博客。关于这两个软件的安装，可以参考它们各自的官方网站上的信息。 安装">
@@ -28,9 +29,9 @@
 <meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/6部署-解决.JPG">
 <meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/15部署成功.JPG">
 <meta property="og:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/15部署成功2.JPG">
-<meta property="og:updated_time" content="2019-06-08T08:36:38.728Z">
+<meta property="og:updated_time" content="2019-06-08T08:49:26.798Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="build blog with Hexo on Github">
+<meta name="twitter:title" content="在Github上用Hexo程序搭建博客">
 <meta name="twitter:description" content="昨天闲来无事，尝试着在Github上搭建了一个博客，博客的框架使用的是Hexo程序。因为是第一次用这种方式建博客，自己又是一个新手，所以记录一下。 安装前的准备部署Hexo需要在电脑中预先装好两个软件：Git和Node.js。在它们共同作用下，使电脑具备了与Github网站通过命令行取得连接的环境，并完全使用这种方式建立Hexo博客。关于这两个软件的安装，可以参考它们各自的官方网站上的信息。 安装">
 <meta name="twitter:image" content="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/1安装Hexo.JPG">
   
@@ -89,6 +90,10 @@
   <time datetime="2019-06-08T05:08:02.000Z" itemprop="datePublished">2019-06-08</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/笔记/">笔记</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -97,7 +102,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      build blog with Hexo on Github
+      在Github上用Hexo程序搭建博客
     </h1>
   
 
@@ -119,7 +124,7 @@
 
 <img src="/2019/06/08/build-blog-with-Hexo-on-Github/2建站2.JPG" title="目录结构">
 
-<p>继续执行以下命令，我们就可以通过在浏览器上输入<a href="http://localhost:4000在本地电脑上预览生成的网站了。" target="_blank" rel="noopener">http://localhost:4000在本地电脑上预览生成的网站了。</a></p>
+<p>继续执行以下命令，我们就可以通过在浏览器上输入[<a href="http://localhost:4000]在本地电脑上预览生成的网站了。" target="_blank" rel="noopener">http://localhost:4000]在本地电脑上预览生成的网站了。</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
 <img src="/2019/06/08/build-blog-with-Hexo-on-Github/3本地预览.JPG" title="本地预览">
@@ -167,8 +172,8 @@
 
 <img src="/2019/06/08/build-blog-with-Hexo-on-Github/6部署-解决.JPG" title="部署解决">
 
-<p>同时，确保在_config.yml文件内修改以下配置。关于网站其他的相关的配置也需要在这里设定，可参考<a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">Hexo</a>官网说明。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:yourname/yourname.github.io.git #替换yourname为你的用户名</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>同时，确保在_config.yml文件内修改以下配置。关于网站其他相关的配置也需要在这里设定，可参考<a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">Hexo</a>官网说明。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:yourname/yourname.github.io.git  # 替换yourname为你的用户名</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
 <p>当命令行最终显示INFO Deploy done: git时，表明我们在Github的网站部署成功，我们便可以在浏览器中输入网址，查看我们的网站。</p>
 <img src="/2019/06/08/build-blog-with-Hexo-on-Github/15部署成功.JPG" title="部署成功">
@@ -179,9 +184,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/" data-id="cjwn9mdtw0000hgumen04s4ii" class="article-share-link">Share</a>
+      <a data-url="http://jchwng.github.io/2019/06/08/build-blog-with-Hexo-on-Github/" data-id="cjwna2ibp0000isumke3eqwzs" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Githubit/">Githubit</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+
     </footer>
   </div>
   
@@ -204,12 +211,33 @@
           <aside id="sidebar">
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/笔记/">笔记</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Githubit/">Githubit</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Githubit/" style="font-size: 10px;">Githubit</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -228,7 +256,7 @@
       <ul>
         
           <li>
-            <a href="/2019/06/08/build-blog-with-Hexo-on-Github/">build blog with Hexo on Github</a>
+            <a href="/2019/06/08/build-blog-with-Hexo-on-Github/">在Github上用Hexo程序搭建博客</a>
           </li>
         
           <li>
