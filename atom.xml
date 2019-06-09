@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>佳晨的笔记</title>
+  
+  <subtitle>记录生活</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://jiachenwang.com/"/>
+  <updated>2019-06-09T02:11:31.847Z</updated>
+  <id>https://jiachenwang.com/</id>
+  
+  <author>
+    <name>王佳晨</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在 Github 上使用 Hexo 程序搭建博客</title>
+    <link href="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/"/>
+    <id>https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/</id>
+    <published>2019-06-08T05:08:02.000Z</published>
+    <updated>2019-06-09T02:11:31.847Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;昨天闲来无事，尝试着在 &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Github&lt;/a&gt; 上搭建了一个博客，博客的框架使用的是 &lt;a href=&quot;https://hexo.io/&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="笔记" scheme="https://jiachenwang.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Github" scheme="https://jiachenwang.com/tags/Github/"/>
+    
+      <category term="Hexo" scheme="https://jiachenwang.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://jiachenwang.com/2019/06/07/hello-world/"/>
+    <id>https://jiachenwang.com/2019/06/07/hello-world/</id>
+    <published>2019-06-07T12:41:45.084Z</published>
+    <updated>2019-06-07T12:41:45.084Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
