@@ -35,13 +35,13 @@
 <link rel="canonical" href="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/">
 
 
-<meta name="description" content="昨天闲来无事，尝试着在 Github 上搭建了一个博客，博客的框架使用的是 Hexo 程序。因为是第一次用这种方式建博客，自己又是一个新手，所以有必要记录一下。 安装前的准备  部署 Hexo 需要在电脑中预先安装好两个软件：Git 和 Node.js。 它们使电脑具备了与 Github 网站上的代码取得交流的环境，是一种  版本控制  工具，让网站上的代码与个人电脑上的保持同步，并通过命令行的方">
+<meta name="description" content="昨天闲来无事，尝试着在 Github 上搭建了一个博客，博客的框架使用的是 Hexo 程序。因为是第一次用这种方式建博客，自己又是一个新手，所以有必要记录一下。 安装前的准备  部署 Hexo 需要在电脑中预先安装好两个软件：Git和 Node.js。它们使电脑具备了与 Github 网站上的代码取得交流的环境，是一种 版本控制  工具，让网站上的代码与个人电脑上的保持同步，并通过命令行的方式创建">
 <meta name="keywords" content="Github,Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在 Github 上使用 Hexo 程序搭建博客">
 <meta property="og:url" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/index.html">
 <meta property="og:site_name" content="佳晨的笔记">
-<meta property="og:description" content="昨天闲来无事，尝试着在 Github 上搭建了一个博客，博客的框架使用的是 Hexo 程序。因为是第一次用这种方式建博客，自己又是一个新手，所以有必要记录一下。 安装前的准备  部署 Hexo 需要在电脑中预先安装好两个软件：Git 和 Node.js。 它们使电脑具备了与 Github 网站上的代码取得交流的环境，是一种  版本控制  工具，让网站上的代码与个人电脑上的保持同步，并通过命令行的方">
+<meta property="og:description" content="昨天闲来无事，尝试着在 Github 上搭建了一个博客，博客的框架使用的是 Hexo 程序。因为是第一次用这种方式建博客，自己又是一个新手，所以有必要记录一下。 安装前的准备  部署 Hexo 需要在电脑中预先安装好两个软件：Git和 Node.js。它们使电脑具备了与 Github 网站上的代码取得交流的环境，是一种 版本控制  工具，让网站上的代码与个人电脑上的保持同步，并通过命令行的方式创建">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Install-Hexo.JPG">
 <meta property="og:image" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/build-website.JPG">
@@ -59,10 +59,10 @@
 <meta property="og:image" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Deployment-solve.JPG">
 <meta property="og:image" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Successful-deployment.JPG">
 <meta property="og:image" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Website-preview.JPG">
-<meta property="og:updated_time" content="2019-06-09T13:38:15.633Z">
+<meta property="og:updated_time" content="2019-06-09T13:49:54.223Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在 Github 上使用 Hexo 程序搭建博客">
-<meta name="twitter:description" content="昨天闲来无事，尝试着在 Github 上搭建了一个博客，博客的框架使用的是 Hexo 程序。因为是第一次用这种方式建博客，自己又是一个新手，所以有必要记录一下。 安装前的准备  部署 Hexo 需要在电脑中预先安装好两个软件：Git 和 Node.js。 它们使电脑具备了与 Github 网站上的代码取得交流的环境，是一种  版本控制  工具，让网站上的代码与个人电脑上的保持同步，并通过命令行的方">
+<meta name="twitter:description" content="昨天闲来无事，尝试着在 Github 上搭建了一个博客，博客的框架使用的是 Hexo 程序。因为是第一次用这种方式建博客，自己又是一个新手，所以有必要记录一下。 安装前的准备  部署 Hexo 需要在电脑中预先安装好两个软件：Git和 Node.js。它们使电脑具备了与 Github 网站上的代码取得交流的环境，是一种 版本控制  工具，让网站上的代码与个人电脑上的保持同步，并通过命令行的方式创建">
 <meta name="twitter:image" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Install-Hexo.JPG">
 
 
@@ -157,7 +157,7 @@
     
             <div class="post-content">
             <p>昨天闲来无事，尝试着在 <a href="https://github.com/" target="_blank" rel="noopener">Github</a> 上搭建了一个博客，博客的框架使用的是 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> 程序。因为是第一次用这种方式建博客，自己又是一个新手，所以有必要记录一下。</p>
-<h2 id="安装前的准备"><a href="# 安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备 </h2><p> 部署 Hexo 需要在电脑中预先安装好两个软件：<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a> 和 <a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a>。 它们使电脑具备了与 Github 网站上的代码取得交流的环境，是一种 <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener"> 版本控制 </a> 工具，让网站上的代码与个人电脑上的保持同步，并通过命令行的方式创建与更新博客。关于它们的安装与使用，可以参考官方网站上的信息。</p>
+<h2 id="安装前的准备"><a href="# 安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备 </h2><p> 部署 Hexo 需要在电脑中预先安装好两个软件：<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>和 <a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a>。它们使电脑具备了与 Github 网站上的代码取得交流的环境，是一种<a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener"> 版本控制 </a> 工具，让网站上的代码与个人电脑上的保持同步，并通过命令行的方式创建与更新博客。关于它们的安装与使用，可以参考官方网站上的信息。</p>
 <h2 id="安装 Hexo"><a href="# 安装 Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>安装环境搭建完成以后，我们使用以下命令安装 Hexo 程序：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
@@ -179,7 +179,7 @@
 <h2 id="创建仓库"><a href="# 创建仓库" class="headerlink" title="创建仓库"></a>创建仓库 </h2><p> 创建好可以浏览的网站后，我们还需要将其发布到网络上，这样才能让其他朋友在他们的电脑前访问你的站点。我们把生成的网站文件存储在 Github 的服务器上，在此之前，我们需要建立一个存放这些代码的仓库（Repository，简称 Repo）。</p>
 <img src="/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Create-repository.JPG" title="创建仓库">
 
-<p>需要注意的是，一定要勾选红框所示的部分，否则将无法生成 <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> （一个类似于 username.github.io 的网址）。</p>
+<p>需要注意的是，一定要勾选红框所示的部分，否则将无法生成<a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>（一个类似于 username.github.io 的网址）。</p>
 <p>接下来，要想使 Git 与 Github 网站取得连接，还需要一些基本设定，否则将发生错误。以下问题都是我在操作时遇到的。</p>
 <h3 id="Git 提示 -Please-tell-me-who-you-are"><a href="#Git 提示 -Please-tell-me-who-you-are" class="headerlink" title="Git 提示 Please tell me who you are."></a>Git 提示 Please tell me who you are.</h3><img src="/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Set-user-information.JPG" title="设置用户信息">
 
@@ -225,7 +225,7 @@
 <p>同时，确保在_config.yml 文件内添加了以下配置。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:username/username.github.io.git  # 替换 username 为你的用户名</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
-<p>关于网站上一些其他基本的配置也需要在这里设定，具体可以参考<a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">Hexo</a> 官网上的说明。</p>
+<p>关于网站上一些其他基本的配置也需要在这里设定，具体可以参考 <a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">Hexo</a> 官网上的说明。</p>
 <p>最终，当代码最后一行显示 INFO Deploy done: git 时，表明我们部署在 Github 上的网站获得成功，可以输入 Github 给我们的网址查看网站。</p>
 <img src="/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Successful-deployment.JPG" title="部署成功">
 
