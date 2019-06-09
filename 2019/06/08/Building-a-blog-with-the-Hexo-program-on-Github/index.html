@@ -31,7 +31,7 @@
 <meta property="og:image" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Deployment-solve.JPG">
 <meta property="og:image" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Successful-deployment.JPG">
 <meta property="og:image" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Website-preview.JPG">
-<meta property="og:updated_time" content="2019-06-09T01:36:22.030Z">
+<meta property="og:updated_time" content="2019-06-09T02:08:12.612Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在 Github 上使用 Hexo 程序搭建博客">
 <meta name="twitter:description" content="昨天闲来无事，尝试着在 Github 上搭建了一个博客，博客的框架使用的是 Hexo 程序。因为是第一次用这种方式建博客，自己又是一个新手，所以有必要记录一下。 安装前的准备  部署 Hexo 需要在电脑中预先安装好两个软件：Git 和 Node.js。 它们使电脑具备了与 Github 网站上的代码取得交流的环境，是一种  版本控制 工具，让网站上的代码与个人电脑上的保持同步，并通过命令行的方式">
@@ -153,9 +153,10 @@
 <p>可以看到，在.ssh 文件夹中只有一个叫做 known_hosts 的文件，它不是我们需要的密钥。通过以下命令，建立密钥：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"username@XXX.com"</span></span><br></pre></td></tr></table></figure>
 
-<p>输入以上命令后，连续回车三次，会在.ssh 文件夹中生成 id_rsa 和 id_rsa.pub 两个文件，它们分别是储存在个人电脑中的私钥和存储在远端电脑中的公钥。之后我们启用 ssh-agent（密钥代理），简单说它是一个可以帮助我们管理私钥的程序，方便日后更容易的建立连接。分别执行以下命令：</p>
+<p>输入以上命令后，连续回车三次，会在.ssh 文件夹中生成 id_rsa 和 id_rsa.pub 两个文件，它们分别是储存在个人电脑中的私钥和存储在远端电脑中的公钥。</p>
 <img src="/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/generated-key.jpg" title="生成密钥">
 
+<p>之后我们启用 ssh-agent（密钥代理），简单说它是一个可以帮助我们管理私钥的程序，方便日后更容易的建立连接。分别执行以下两个命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">eval</span> <span class="string">"<span class="variable">$(ssh-agent -s)</span>"</span></span><br><span class="line">$ ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
 
 <img src="/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/private-key-storage.JPG" title="启用密钥代理">
@@ -190,7 +191,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/" data-id="cjwoa581x0000l4umef1jk37v" class="article-share-link">Share</a>
+      <a data-url="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/" data-id="cjwob6kvw0000csumfgrekqwj" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
