@@ -35,13 +35,13 @@
 <link rel="canonical" href="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/">
 
 
-<meta name="description" content="昨天闲来无事，尝试着在 Github 上搭建了一个博客，博客的框架使用的是 Hexo 程序。因为是第一次用这种方式建博客，自己又是一个新手，所以有必要记录一下。 安装前的准备  部署 Hexo 需要在电脑中预先安装好两个软件：Git和 Node.js。它们使电脑具备了与 Github 网站上的代码取得交流的环境，是一种 版本控制  工具，让网站上的代码与个人电脑上的保持同步，并通过命令行的方式创建">
+<meta name="description" content="昨天闲来无事，尝试着在Github上搭建了一个博客，博客的框架使用的是Hexo程序。因为是第一次用这种方式建博客，自己又是一个新手，所以有必要记录一下。">
 <meta name="keywords" content="Github,Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在 Github 上使用 Hexo 程序搭建博客">
 <meta property="og:url" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/index.html">
 <meta property="og:site_name" content="佳晨的笔记">
-<meta property="og:description" content="昨天闲来无事，尝试着在 Github 上搭建了一个博客，博客的框架使用的是 Hexo 程序。因为是第一次用这种方式建博客，自己又是一个新手，所以有必要记录一下。 安装前的准备  部署 Hexo 需要在电脑中预先安装好两个软件：Git和 Node.js。它们使电脑具备了与 Github 网站上的代码取得交流的环境，是一种 版本控制  工具，让网站上的代码与个人电脑上的保持同步，并通过命令行的方式创建">
+<meta property="og:description" content="昨天闲来无事，尝试着在Github上搭建了一个博客，博客的框架使用的是Hexo程序。因为是第一次用这种方式建博客，自己又是一个新手，所以有必要记录一下。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Install-Hexo.JPG">
 <meta property="og:image" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/build-website.JPG">
@@ -59,10 +59,10 @@
 <meta property="og:image" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Deployment-solve.JPG">
 <meta property="og:image" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Successful-deployment.JPG">
 <meta property="og:image" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Website-preview.JPG">
-<meta property="og:updated_time" content="2019-06-09T15:00:49.868Z">
+<meta property="og:updated_time" content="2019-06-09T15:17:51.182Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在 Github 上使用 Hexo 程序搭建博客">
-<meta name="twitter:description" content="昨天闲来无事，尝试着在 Github 上搭建了一个博客，博客的框架使用的是 Hexo 程序。因为是第一次用这种方式建博客，自己又是一个新手，所以有必要记录一下。 安装前的准备  部署 Hexo 需要在电脑中预先安装好两个软件：Git和 Node.js。它们使电脑具备了与 Github 网站上的代码取得交流的环境，是一种 版本控制  工具，让网站上的代码与个人电脑上的保持同步，并通过命令行的方式创建">
+<meta name="twitter:description" content="昨天闲来无事，尝试着在Github上搭建了一个博客，博客的框架使用的是Hexo程序。因为是第一次用这种方式建博客，自己又是一个新手，所以有必要记录一下。">
 <meta name="twitter:image" content="https://jiachenwang.com/2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/Install-Hexo.JPG">
 
 
@@ -157,6 +157,7 @@
     
             <div class="post-content">
             <p>昨天闲来无事，尝试着在 <a href="https://github.com/" target="_blank" rel="noopener">Github</a> 上搭建了一个博客，博客的框架使用的是 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> 程序。因为是第一次用这种方式建博客，自己又是一个新手，所以有必要记录一下。</p>
+<a id="more"></a>
 <h2 id="安装前的准备"><a href="# 安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备 </h2><p> 部署 Hexo 需要在电脑中预先安装好两个软件：<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>和 <a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a>。它们使电脑具备了与 Github 网站上的代码取得交流的环境，是一种<a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener"> 版本控制 </a> 工具，让网站上的代码与个人电脑上的保持同步，并通过命令行的方式创建与更新博客。关于它们的安装与使用，可以参考官方网站上的信息。</p>
 <h2 id="安装 Hexo"><a href="# 安装 Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>安装环境搭建完成以后，我们使用以下命令安装 Hexo 程序：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
