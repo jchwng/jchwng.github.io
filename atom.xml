@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jiachenwang.com/"/>
-  <updated>2019-06-10T14:48:03.511Z</updated>
+  <updated>2019-06-10T14:51:55.477Z</updated>
   <id>https://jiachenwang.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://jiachenwang.com/2019/06/10/Further-configuration-of-the-blog/"/>
     <id>https://jiachenwang.com/2019/06/10/Further-configuration-of-the-blog/</id>
     <published>2019-06-10T11:24:00.000Z</published>
-    <updated>2019-06-10T14:48:03.511Z</updated>
+    <updated>2019-06-10T14:51:55.477Z</updated>
     
-    <content type="html"><![CDATA[<p> 又是昨天，对新建立的博客进行了一些简单的设置与调整。最直观的变化是更换了新的外观。</p><a id="more"></a><p> 首先，我必须说，默认的主题也是非常的优秀的，只是它的色调对于我来说不是太喜欢。相比之下，我更喜欢简洁的风格。这个纯白的外观给我一种豪无束缚感的记录感受，让人的注意力更多地关注于内容，更接近于阅读的习惯；其次，博客新建立的热度，驱使我还想折腾一下，研究一下如何更换主题。</p><p> 除了对博客外观的改变，另一个变化就是绑定了我自己的域名，不再使用 GitHub 的二级域名。与此同时，我将博客访问接入了 Cloudflare 的 CDN 网络。由于 GitHub 的服务器位于国外，接入 CDN 可以在一定程度上加速网站的访问速度，优化网络相应，同时兼具一定的网络安全防护功能。现在，博客的访问采用 Cloudflare 提供的 SSL 安全加密协议，客户端与服务器的连接是被加密的，可以在一定程度上保障网络的安全。</p><p> 另外一些改变，是给博客添加了两个小插件，包括能自动在东亚文字与西方拉丁字母间自动添加间距的插件，可以在一定程度上促进阅读的体验，同时方便创作者；另一个是生成 RSS 聚合阅读的插件。</p><p> 目前大致的一些改变就是这些，由于我对 Hexo 博客还不是很熟悉，所以今后还需要进一步研究。最后，以一张今天旁晚的黄昏照片结束这篇博文。</p><img src="/2019/06/10/Further-configuration-of-the-blog/Dusk-in-the-rain.jpg" title="雨中的黄昏"><p><right><em>Photo by Jiachen</em><right></right></right></p>]]></content>
+    <content type="html"><![CDATA[<p> 又是昨天，对新建立的博客进行了一些简单的设置与调整。最直观的变化是更换了新的外观。</p><a id="more"></a><p> 首先，我必须说，默认的主题也是非常的优秀的，只是它的色调对于我来说不是太喜欢。相比之下，我更喜欢简洁的风格。这个纯白的外观给我一种豪无束缚感的记录感受，让人的注意力更多地关注于内容，更接近于阅读的习惯；其次，博客新建立的热度，驱使我还想折腾一下，研究一下如何更换主题。</p><p> 除了对博客外观的改变，另一个变化就是绑定了我自己的域名，不再使用 GitHub 的二级域名。与此同时，我将博客访问接入了 Cloudflare 的 CDN 网络。由于 GitHub 的服务器位于国外，接入 CDN 可以在一定程度上加速网站的访问速度，优化网络相应，同时兼具一定的网络安全防护功能。现在，博客的访问采用 Cloudflare 提供的 SSL 安全加密协议，客户端与服务器的连接是被加密的，可以在一定程度上保障网络的安全。</p><p> 另外一些改变，是给博客添加了两个小插件，包括能自动在东亚文字与西方拉丁字母间自动添加间距的插件，可以在一定程度上促进阅读的体验，同时方便创作者；另一个是生成 RSS 聚合阅读的插件。</p><p> 目前大致的一些改变就是这些，由于我对 Hexo 博客还不是很熟悉，所以今后还需要进一步研究。最后，以一张今天旁晚的黄昏照片结束这篇博文。</p><img src="/2019/06/10/Further-configuration-of-the-blog/Dusk-in-the-rain.jpg" title="雨中的黄昏"><p align="right">Photo by Jiachen</p>]]></content>
     
     <summary type="html">
     
