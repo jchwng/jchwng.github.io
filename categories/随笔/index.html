@@ -195,32 +195,36 @@
       </div>
     </div>
     
-///
-///<script type="text/javascript">
-///  var disqus_shortname = 'jchwng';
-///  var disqus_identifier = 'categories/随笔/index.html';
 
-///  var disqus_title = "";
+<script type="text/javascript">
+  var disqus_shortname = 'jchwng';
+  var disqus_identifier = 'categories/随笔/index.html';
+
+  var disqus_title = "";
 
 
-///  var disqus = {
-///    load : function disqus(){
-///        if(typeof DISQUS !== 'object') {
-///          (function () {
-///          var s = document.createElement('script'); s.async = true;
-///          s.type = 'text/javascript';
-///          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-///          (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-///          }());
-///          $('#load-disqus').remove(); ///加载后移除按钮
-///        }
-///    }
-///  }
+  var disqus = {
+    load : function disqus(){
+        if(typeof DISQUS !== 'object') {
+          (function () {
+          var disq = new iDisqus('comment', {
+		forum: 'jchwng',
+		api: 'https://disqus-php-api-e5cf7t1m4.now.sh',
+		site: 'https://jiachenwang.com',
+		mode: 1,
+		timeout: 3000,
+		init: true
+		});
+          }());
+          $('#load-disqus').remove(); ///加载后移除按钮
+        }
+    }
+  }
 
-///  
+  
 
-///</script>
-///
+</script>
+
 
     
 

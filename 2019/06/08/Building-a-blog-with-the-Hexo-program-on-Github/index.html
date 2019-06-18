@@ -276,14 +276,7 @@
         <button class="btn" id="load-disqus" onclick="disqus.load();">加载 Disqus 评论</button>
     </div>
       <div id="comment"></div>
-		var disq = new iDisqus('comment', {
-		forum: 'jchwng',
-		api: 'https://disqus-php-api-e5cf7t1m4.now.sh',
-		site: 'https://jiachenwang.com',
-		mode: 1,
-		timeout: 3000,
-		init: true
-		});
+		
     
   </div>
 
@@ -314,38 +307,42 @@
       </div>
     </div>
     
-///
-///<script type="text/javascript">
-///  var disqus_shortname = 'jchwng';
-///  var disqus_identifier = '2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/';
 
-///  var disqus_title = "在 Github 上使用 Hexo 程序搭建博客";
+<script type="text/javascript">
+  var disqus_shortname = 'jchwng';
+  var disqus_identifier = '2019/06/08/Building-a-blog-with-the-Hexo-program-on-Github/';
+
+  var disqus_title = "在 Github 上使用 Hexo 程序搭建博客";
 
 
-///  var disqus = {
-///    load : function disqus(){
-///        if(typeof DISQUS !== 'object') {
-///          (function () {
-///          var s = document.createElement('script'); s.async = true;
-///          s.type = 'text/javascript';
-///          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-///          (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-///          }());
-///          $('#load-disqus').remove(); ///加载后移除按钮
-///        }
-///    }
-///  }
+  var disqus = {
+    load : function disqus(){
+        if(typeof DISQUS !== 'object') {
+          (function () {
+          var disq = new iDisqus('comment', {
+		forum: 'jchwng',
+		api: 'https://disqus-php-api-e5cf7t1m4.now.sh',
+		site: 'https://jiachenwang.com',
+		mode: 1,
+		timeout: 3000,
+		init: true
+		});
+          }());
+          $('#load-disqus').remove(); ///加载后移除按钮
+        }
+    }
+  }
 
-///  
-///    var disqus_config = function () {
-///        this.page.url = disqus_url;
-///        this.page.identifier = disqus_identifier;
-///        this.page.title = disqus_title;
-///    };
-///  
+  
+    var disqus_config = function () {
+        this.page.url = disqus_url;
+        this.page.identifier = disqus_identifier;
+        this.page.title = disqus_title;
+    };
+  
 
-///</script>
-///
+</script>
+
 
     
 
