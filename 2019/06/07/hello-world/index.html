@@ -48,6 +48,8 @@
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://disqus-php-api-e5cf7t1m4.now.sh/dist/iDisqus.min.css">
+<script src="https://disqus-php-api-e5cf7t1m4.now.sh/dist/iDisqus.min.js"></script>
 
 
 
@@ -177,12 +179,15 @@
     <div style="text-align:center;">
         <button class="btn" id="load-disqus" onclick="disqus.load();">加载 Disqus 评论</button>
     </div>
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      <div id="comment"></div>
+		var disq = new iDisqus('comment', {
+		forum: 'jchwng',
+		api: 'https://disqus-php-api-e5cf7t1m4.now.sh',
+		site: 'https://jiachenwang.com',
+		mode: 1,
+		timeout: 3000,
+		init: true
+		});
     
   </div>
 
@@ -213,38 +218,38 @@
       </div>
     </div>
     
+///
+///<script type="text/javascript">
+///  var disqus_shortname = 'jchwng';
+///  var disqus_identifier = '2019/06/07/hello-world/';
 
-<script type="text/javascript">
-  var disqus_shortname = 'jchwng';
-  var disqus_identifier = '2019/06/07/hello-world/';
-
-  var disqus_title = "Hello World";
+///  var disqus_title = "Hello World";
 
 
-  var disqus = {
-    load : function disqus(){
-        if(typeof DISQUS !== 'object') {
-          (function () {
-          var s = document.createElement('script'); s.async = true;
-          s.type = 'text/javascript';
-          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-          }());
-          $('#load-disqus').remove(); ///加载后移除按钮
-        }
-    }
-  }
+///  var disqus = {
+///    load : function disqus(){
+///        if(typeof DISQUS !== 'object') {
+///          (function () {
+///          var s = document.createElement('script'); s.async = true;
+///          s.type = 'text/javascript';
+///          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+///          (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+///          }());
+///          $('#load-disqus').remove(); ///加载后移除按钮
+///        }
+///    }
+///  }
 
-  
-    var disqus_config = function () {
-        this.page.url = disqus_url;
-        this.page.identifier = disqus_identifier;
-        this.page.title = disqus_title;
-    };
-  
+///  
+///    var disqus_config = function () {
+///        this.page.url = disqus_url;
+///        this.page.identifier = disqus_identifier;
+///        this.page.title = disqus_title;
+///    };
+///  
 
-</script>
-
+///</script>
+///
 
     
 
