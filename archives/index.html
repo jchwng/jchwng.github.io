@@ -47,8 +47,6 @@
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link rel="stylesheet" href="http://wjch.s601.xrea.com/disqus/dist/iDisqus.min.css">
-<script src="http://wjch.s601.xrea.com/disqus/dist/iDisqus.min.js"></script>
 
 
 
@@ -254,14 +252,19 @@
   var disqus_title = "";
 
 
-  var disq = new iDisqus('comment', {
-			forum: 'jchwng',
-			api: 'http://wjch.s601.xrea.com/disqus',
-			site: 'https://jiachenwang.com',
-			mode: 1,
-			timeout: 3000,
-			init: true
-			});
+  var disqus = {
+    load : function disqus(){
+        if(typeof DISQUS !== 'object') {
+          (function () {
+          var s = document.createElement('script'); s.async = true;
+          s.type = 'text/javascript';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+          }());
+          $('#load-disqus').remove(); ///加载后移除按钮
+        }
+    }
+  }
 
   
 
