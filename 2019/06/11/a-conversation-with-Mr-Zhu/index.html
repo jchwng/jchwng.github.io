@@ -226,11 +226,7 @@
   var disqus_title = "与朱先生的一次交谈";
 
 
-  var disqus = {
-    load : function disqus(){
-        if(typeof DISQUS !== 'object') {
-          (function () {
-          var disq = new iDisqus('comment', {
+  var disq = new iDisqus('comment', {
 		forum: 'jchwng',
 		api: 'https://disqus-php-api-e5cf7t1m4.now.sh',
 		site: 'https://jiachenwang.com',
@@ -238,11 +234,6 @@
 		timeout: 3000,
 		init: true
 		});
-          }());
-          $('#load-disqus').remove(); ///加载后移除按钮
-        }
-    }
-  }
 
   
     var disqus_config = function () {
