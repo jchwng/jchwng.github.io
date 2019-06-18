@@ -307,11 +307,7 @@
   var disqus_title = "";
 
 
-  var disqus = {
-    load : function disqus(){
-        if(typeof DISQUS !== 'object') {
-          (function () {
-			var disq = new iDisqus('comment', {
+  var disq = new iDisqus('comment', {
 			forum: 'ifool',
 			api: 'http://wjch.s601.xrea.com/disqus',
 			site: 'https://jiachenwang.com',
@@ -319,11 +315,6 @@
 			timeout: 3000,
 			init: true
 			});
-          }());
-          $('#load-disqus').remove(); ///加载后移除按钮
-        }
-    }
-  }
 
   
 
