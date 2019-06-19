@@ -226,14 +226,17 @@
 
   var disqus = {
     load : function disqus(){
-        var disq = new iDisqus('comment', {
-		forum: 'jchwng',
-		api: 'https://disqus-php-api-f6fo0pybc.now.sh/api/',
-		site: 'https://jiachenwang.com',
-		mode: 1,
-		timeout: 3000,
-		init: true
-		});
+	if(typeof DISQUS !== 'object') {
+          (function () {
+				var disq = new iDisqus('comment', {
+				forum: 'jchwng',
+				api: 'https://disqus-php-api-f6fo0pybc.now.sh/api/',
+				site: 'https://jiachenwang.com',
+				mode: 1,
+				timeout: 3000,
+				init: true
+				});
+			}());
           $('#load-disqus').remove(); ///加载后移除按钮
         }
     }
