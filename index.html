@@ -47,6 +47,8 @@
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://disqus-php-api-f6fo0pybc.now.sh/dist/iDisqus.min.css">
+<script src="https://disqus-php-api-f6fo0pybc.now.sh/dist/iDisqus.min.js"></script>
 
 
 
@@ -307,13 +309,14 @@
 
   var disqus = {
     load : function disqus(){
-        if(typeof DISQUS !== 'object') {
-          (function () {
-          var s = document.createElement('script'); s.async = true;
-          s.type = 'text/javascript';
-          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-          }());
+        var disq = new iDisqus('comment', {
+		forum: 'jchwng',
+		api: 'https://disqus-php-api-f6fo0pybc.now.sh/api/',
+		site: 'https://jiachenwang.com',
+		mode: 1,
+		timeout: 3000,
+		init: true
+		});
           $('#load-disqus').remove(); ///加载后移除按钮
         }
     }
